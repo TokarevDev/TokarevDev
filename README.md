@@ -1,78 +1,79 @@
 # Unity Gameplay Developer (C#)
 
-I build gameplay systems that scale and remain stable as projects grow.
+I build modular gameplay systems with a focus on maintainability, performance, and clear separation of responsibilities.
 
-Focused on system design, performance optimization, and improving existing codebases without introducing regressions.
+Focused on gameplay programming, performance optimization, and improving existing Unity codebases without introducing regressions.
 
 ---
 
-## 🚀 Shipped Game
+## Shipped Game
 
-### Emoji Battle — Mobile Game (Unity)
+### Emoji Battle — Mobile Game (Unity 6)
 
-Released on Google Play
+Released on Google Play.
 
 **Problem:**  
-Gameplay systems and UI logic can become tightly coupled and hard to maintain in small mobile projects.
+Small mobile projects can quickly become hard to maintain when gameplay flow, UI logic, AI behavior, and progression are tightly coupled.
 
 **Solution:**  
-Designed gameplay architecture using MVC principles and refactored UI into a UI-driven system with event-based interactions.
+Structured the project using MVC/SRP principles, separated UI, state, and gameplay logic, and implemented AI behavior through the Strategy pattern.
 
 **Result:**  
-• Predictable gameplay flow and maintainable code structure  
-• Modular AI using Strategy pattern with scalable difficulty  
-• Stable performance on mobile devices  
-• Reliable progression and save/load system  
+- Released a complete mobile game on Google Play  
+- Built predictable turn-based gameplay flow  
+- Implemented scalable AI difficulty logic  
+- Added progression, save/load, and ads integration  
+- Improved maintainability through clearer separation of responsibilities  
 
-🔗 Google Play: https://play.google.com/store/apps/details?id=com.sd7gamestudio.emojibattle  
-🔗 GitHub: https://github.com/SD7Games/Emoji_Battle  
+Google Play: https://play.google.com/store/apps/details?id=com.sd7gamestudio.emojibattle  
+GitHub: https://github.com/SD7Games/Emoji_Battle  
 
 ---
 
-## 🧠 Current Project
+## Current Project
 
-### Force of Nature: Last Seed — Modular 2D Shooter
+### Force of Nature: Last Seed — Modular 2D Auto-Shooter
 
-**Focus:** scalable systems, performance under load, and clean architecture.
+**Focus:** modular gameplay systems, runtime performance, and fast gameplay iteration.
 
 **Problem:**  
-As gameplay systems grow (weapons, enemies, combat), tight coupling and runtime allocations lead to instability and poor performance.
+As weapons, rewards, enemies, and combat logic grow, hardcoded values and tightly coupled systems make balancing and feature changes slower.
 
 **Solution:**  
-• Designed a data-driven weapon system using ScriptableObjects and runtime modifier pipeline  
-• Implemented event-driven combat architecture to decouple systems  
-• Built modular enemy system with scalable behavior  
-• Applied object pooling to handle high object count scenarios  
+- Built ScriptableObject-based weapon and reward systems  
+- Implemented runtime modifiers for weapon upgrades  
+- Added projectile pooling to avoid frequent Instantiate/Destroy during gameplay  
+- Structured combat, rewards, UI, and enemy logic into smaller responsibilities  
+- Developed segmented enemy logic and reward upgrade flow  
 
 **Result:**  
-• Systems can be extended without modifying core logic  
-• Stable gameplay under heavy load  
-• Reduced runtime allocations and GC pressure  
-• Clean and maintainable architecture for future scaling  
+- Faster gameplay balancing without changing core logic  
+- Reduced runtime allocations in high object count scenarios  
+- Easier extension of weapons, rewards, and combat behavior  
+- Cleaner gameplay flow with less coupling between systems  
 
-🔗 GitHub: https://github.com/SD7games/Force_of_Nature_Last_Seed  
-
----
-
-## 🧪 Additional Prototypes
-
-Playable Unity prototypes focused on gameplay systems, iteration, and practical problem-solving.
-
-• Rapid prototyping of mechanics  
-• System design experimentation  
-• Refactoring and improving gameplay logic over time  
-
-🔗 https://sd7games.itch.io  
+GitHub: https://github.com/SD7games/Force_of_Nature_Last_Seed  
 
 ---
 
-## 🧰 Tech Focus
+## Additional Playable Prototypes
 
-Unity, C#, Gameplay Systems, AI (Strategy Pattern), Object Pooling, Performance Optimization, ScriptableObjects, MVC, Event-driven Architecture
+- **FPS Prototype:** raycast shooting, weapon switching, ScriptableObject weapon configs, NavMesh enemies, pickups, UI, audio/VFX  
+- **Galaxy Strike:** 3D space shooter with Input System, Timeline sequences, Particle System weapons, UI, scene flow, PC build  
+- **Royal Run:** 3D endless runner with Rigidbody movement, procedural chunk generation, pickups, Cinemachine, UI, WebGL build  
+- **Multiplayer Tank Prototype:** Netcode for GameObjects, UGS Relay/Lobby/Auth, ServerRpc/ClientRpc, networked health, coins, leaderboard, minimap  
+
+Playable builds: https://sd7games.itch.io  
 
 ---
 
-## 📫 Contact
+## Tech Focus
+
+Unity 6, C#, Gameplay Programming, ScriptableObjects, Object Pooling, UGUI, TextMeshPro, New Input System, Physics2D, DOTween, Unity Profiler, Git, Android, PC, WebGL
+
+---
+
+## Contact
 
 Email: OleksandrTokarevDev@gmail.com  
 LinkedIn: https://www.linkedin.com/in/oleksandrtokarev/  
