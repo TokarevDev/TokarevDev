@@ -1,67 +1,68 @@
-# Unity Gameplay Developer (C#)
+# Unity Developer (C#)
 
-I build modular gameplay systems with a focus on maintainability, performance, and clear separation of responsibilities.
+I build playable Unity features for Android, PC, and WebGL.
 
-Focused on gameplay programming, performance optimization, and improving existing Unity codebases without introducing regressions.
+My work covers gameplay logic, UI flow, scene setup, prefabs, ScriptableObject configs, save systems, ads integration, debugging, mobile builds, and performance optimization.
+
+I shipped a complete mobile game on Google Play and built several playable prototypes across mobile arcade, FPS, endless runner, space shooter, and multiplayer gameplay.
 
 ---
 
 ## Shipped Game
 
-### Emoji Battle — Mobile Game (Unity 6)
+### Emoji Battle — Released Mobile Game
 
-Released on Google Play.
+A complete Android mobile game released on Google Play.
 
-**Problem:**  
-Small mobile projects can quickly become hard to maintain when gameplay flow, UI logic, AI behavior, and progression are tightly coupled.
+**What I built:**
+- Full turn-based gameplay loop
+- AI opponent logic with multiple difficulty levels
+- Progression and save/load system
+- UI flow and game state handling
+- Rewarded and interstitial ads integration
+- Android release setup for Google Play
 
-**Solution:**  
-Structured the project using MVC/SRP principles, separated UI, state, and gameplay logic, and implemented AI behavior through the Strategy pattern.
-
-**Result:**  
-- Released a complete mobile game on Google Play  
-- Built predictable turn-based gameplay flow  
-- Implemented scalable AI difficulty logic  
-- Added progression, save/load, and ads integration  
-- Improved maintainability through clearer separation of responsibilities  
+**Technical focus:**
+- MVC/SRP-style separation between gameplay logic, UI, and state
+- Strategy Pattern for reusable AI decision logic
+- Cleaner project structure for easier debugging and future changes
 
 Google Play: https://play.google.com/store/apps/details?id=com.sd7gamestudio.emojibattle  
-GitHub: https://github.com/SD7Games/Emoji_Battle  
+GitHub: https://github.com/TokarevDev/Emoji_Battle  
 
 ---
 
 ## Current Project
 
-### Force of Nature: Last Seed — Modular 2D Auto-Shooter
+### Force of Nature: Last Seed — 2D Mobile Auto-Shooter
 
-**Focus:** modular gameplay systems, runtime performance, and fast gameplay iteration.
+A modular 2D mobile auto-shooter for Android, currently in closed testing on Google Play.
 
-**Problem:**  
-As weapons, rewards, enemies, and combat logic grow, hardcoded values and tightly coupled systems make balancing and feature changes slower.
+**What I built:**
+- Weapon logic and upgrade flow
+- Reward choice system
+- Projectile pooling
+- Runtime weapon modifiers
+- Segmented worm enemy logic
+- UI flow and mobile build preparation
 
-**Solution:**  
-- Built ScriptableObject-based weapon and reward systems  
-- Implemented runtime modifiers for weapon upgrades  
-- Added projectile pooling to avoid frequent Instantiate/Destroy during gameplay  
-- Structured combat, rewards, UI, and enemy logic into smaller responsibilities  
-- Developed segmented enemy logic and reward upgrade flow  
+**Technical focus:**
+- ScriptableObject-based weapon and reward configs
+- Object pooling to reduce frequent Instantiate/Destroy usage
+- Event-driven gameplay flow
+- Cleaner C# separation for easier balancing, debugging, and feature extension
+- Mobile-focused performance improvements
 
-**Result:**  
-- Faster gameplay balancing without changing core logic  
-- Reduced runtime allocations in high object count scenarios  
-- Easier extension of weapons, rewards, and combat behavior  
-- Cleaner gameplay flow with less coupling between systems  
-
-GitHub: https://github.com/SD7games/Force_of_Nature_Last_Seed  
+GitHub: https://github.com/TokarevDev/Force_of_Nature_Last_Seed  
 
 ---
 
 ## Additional Playable Prototypes
 
-- **FPS Prototype:** raycast shooting, weapon switching, ScriptableObject weapon configs, NavMesh enemies, pickups, UI, audio/VFX  
-- **Galaxy Strike:** 3D space shooter with Input System, Timeline sequences, Particle System weapons, UI, scene flow, PC build  
-- **Royal Run:** 3D endless runner with Rigidbody movement, procedural chunk generation, pickups, Cinemachine, UI, WebGL build  
-- **Multiplayer Tank Prototype:** Netcode for GameObjects, UGS Relay/Lobby/Auth, ServerRpc/ClientRpc, networked health, coins, leaderboard, minimap  
+- **FPS Prototype:** raycast shooting, weapon switching, ScriptableObject weapon configs, NavMesh enemies, pickups, UI, audio/VFX
+- **Galaxy Strike:** 3D space shooter with Input System, Timeline sequences, Particle System weapons, UI, scene flow, PC build
+- **Royal Run:** 3D endless runner with Rigidbody movement, procedural chunk generation, pickups, Cinemachine, UI, WebGL build
+- **Multiplayer Tank Prototype:** Netcode for GameObjects, UGS Relay/Lobby/Auth, ServerRpc/ClientRpc, networked health, coins, leaderboard, minimap
 
 Playable builds: https://sd7games.itch.io  
 
@@ -69,7 +70,7 @@ Playable builds: https://sd7games.itch.io
 
 ## Tech Focus
 
-Unity 6, C#, Gameplay Programming, ScriptableObjects, Object Pooling, UGUI, TextMeshPro, New Input System, Physics2D, DOTween, Unity Profiler, Git, Android, PC, WebGL
+Unity 6, C#, Unity Development, Gameplay Logic, UI Flow, Scene Setup, Prefab Setup, ScriptableObjects, Object Pooling, MVC/SRP, Event-driven Systems, New Input System, Physics2D, DOTween, Unity Profiler, Git, Android, PC, WebGL
 
 ---
 
