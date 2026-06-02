@@ -1,81 +1,84 @@
-# Unity Developer (C#)
+# Oleksandr Tokarev - Unity C# Developer
 
-I build playable Unity features for Android, PC, and WebGL.
+Unity C# Developer based in Finland, focused on gameplay systems, mobile/WebGL prototypes, clean feature implementation, and practical production-ready Unity workflows.
 
-My work covers gameplay logic, UI flow, scene setup, prefabs, ScriptableObject configs, save systems, ads integration, debugging, mobile builds, and performance optimization.
+I build playable Unity features from prototype to release: gameplay logic, UI flow, scene/prefab setup, data-driven configs, save/load features, ads integration, debugging, profiling, and build preparation for Android, PC, and WebGL.
 
-I shipped a complete mobile game on Google Play and built several playable prototypes across mobile arcade, FPS, endless runner, space shooter, and multiplayer gameplay.
+- Portfolio: https://tokarevdev.github.io/
+- LinkedIn: https://www.linkedin.com/in/oleksandrtokarev/
+- Playable builds: https://sd7games.itch.io/
+- Released game: https://play.google.com/store/apps/details?id=com.sd7gamestudio.emojibattle
+- Email: OleksandrTokarevDev@gmail.com
 
----
+## What I Can Own
 
-## Shipped Game
+- Gameplay systems: combat, weapons, projectiles, enemies, rewards, progression, player flow, and complete playable loops.
+- Unity implementation: MonoBehaviour lifecycle, scenes, prefabs, UI screens, popups, input, build setup, and iteration inside the Unity Editor.
+- Maintainable C#: SRP-style components, event-driven communication, service abstractions, data/runtime separation, and readable feature code.
+- Mobile performance: object pooling, GC allocation awareness, cached references, fewer runtime scene searches, and profiler-minded iteration.
+- Delivery workflow: Android builds, WebGL prototypes, Google Play release preparation, Git, debugging, refactoring, and technical documentation.
 
-### Emoji Battle — Released Mobile Game
+## Featured Projects
 
-A complete Android mobile game released on Google Play.
+### Last Seed: Survival
 
-**What I built:**
-- Full turn-based gameplay loop
-- AI opponent logic with multiple difficulty levels
-- Progression and save/load system
-- UI flow and game state handling
-- Rewarded and interstitial ads integration
-- Android release setup for Google Play
+2D mobile auto-shooter built in Unity 6 with modular weapons, reward choices, pooled projectiles, segmented worm enemy logic, custom balancing tooling, and Android release preparation.
 
-**Technical focus:**
-- MVC/SRP-style separation between gameplay logic, UI, and state
-- Strategy Pattern for reusable AI decision logic
-- Cleaner project structure for easier debugging and future changes
+What I built:
+
+- Projectile weapon and Acacia Thorn weapon systems.
+- Runtime modifiers for damage, fire rate, critical chance, critical power, penetration, salvo shots, projectile speed, and parallel shots.
+- Reward roll/apply services with rarity slots, reward categories, rerolls, and DPS-aware reward bias.
+- Segmented worm enemy with combat sections, rollback behavior, HP scaling, pressure tuning, and visual presenters.
+- Projectile and worm segment pooling to reduce runtime object churn.
+- Unity Editor balance lab for deterministic reward/HP simulations using real project data.
+
+Repository: https://github.com/TokarevDev/Force_of_Nature_Last_Seed
+
+### Emoji Battle
+
+Released Android game with turn-based combat, AI strategy selection, progression, persistent player data, popup/UI flow, rewarded/interstitial ads, and Google Play release workflow.
+
+What I built:
+
+- Full turn-based gameplay loop and board state logic.
+- AI strategies for multiple difficulty levels.
+- Progression, rewards, avatar selection, settings, and persistent game data.
+- Popup service, UI screens, result flow, and animated UI feedback.
+- Unity Ads service with rewarded state handling, load timeout, resume handling, and online/offline checks.
+- Google Play release preparation and Android build workflow.
 
 Google Play: https://play.google.com/store/apps/details?id=com.sd7gamestudio.emojibattle  
-GitHub: https://github.com/TokarevDev/Emoji_Battle  
+Repository: https://github.com/TokarevDev/Emoji_Battle
 
----
+### Tanks Multiplayer Prototype
 
-## Current Project
+Unity multiplayer prototype with host/client flow, anonymous authentication, UGS Relay/Lobby, networked movement, shooting, health, respawn, coins, and leaderboard-style UI.
 
-### Force of Nature: Last Seed — 2D Mobile Auto-Shooter
+What I built:
 
-A modular 2D mobile auto-shooter for Android, currently in closed testing on Google Play.
+- Client/host connection flow with Unity Services initialization.
+- Relay allocation, join-code setup, lobby creation, lobby list, and heartbeat handling.
+- NetworkVariables for player data, health, names, and coins.
+- ServerRpc/ClientRpc shooting flow and networked projectile spawning.
+- Respawn, leaderboard, HUD, lobby UI, and menu flow.
 
-**What I built:**
-- Weapon logic and upgrade flow
-- Reward choice system
-- Projectile pooling
-- Runtime weapon modifiers
-- Segmented worm enemy logic
-- UI flow and mobile build preparation
-
-**Technical focus:**
-- ScriptableObject-based weapon and reward configs
-- Object pooling to reduce frequent Instantiate/Destroy usage
-- Event-driven gameplay flow
-- Cleaner C# separation for easier balancing, debugging, and feature extension
-- Mobile-focused performance improvements
-
-GitHub: https://github.com/TokarevDev/Force_of_Nature_Last_Seed  
-
----
+Repository: https://github.com/TokarevDev/Tanks_Multiplayer
 
 ## Additional Playable Prototypes
 
-- **FPS Prototype:** raycast shooting, weapon switching, ScriptableObject weapon configs, NavMesh enemies, pickups, UI, audio/VFX
-- **Galaxy Strike:** 3D space shooter with Input System, Timeline sequences, Particle System weapons, UI, scene flow, PC build
-- **Royal Run:** 3D endless runner with Rigidbody movement, procedural chunk generation, pickups, Cinemachine, UI, WebGL build
-- **Multiplayer Tank Prototype:** Netcode for GameObjects, UGS Relay/Lobby/Auth, ServerRpc/ClientRpc, networked health, coins, leaderboard, minimap
+- Sharp Shooter: FPS WebGL prototype with weapon configs, raycast shooting, pickups, enemy behavior, health/shield flow, UI feedback, and browser delivery.
+- Royal Run: 3D endless runner WebGL prototype with player movement, pickups, obstacle spawning, score/UI/audio flow, and chunk-based level progression.
+- Galaxy Strike: 3D space shooter PC prototype with shooting interactions, collision/game state handling, score UI, dialogue/audio flow, and cinematic sequence setup.
 
-Playable builds: https://sd7games.itch.io  
+## Technical Focus
 
----
+Unity 6, C#, gameplay programming, UGUI, Input System, ScriptableObjects, event-driven systems, Strategy Pattern, object pooling, Physics2D, NavMesh exposure, DOTween, Unity Ads, Netcode for GameObjects, UGS Relay/Lobby/Auth, Unity Profiler, Git, Android, PC, WebGL.
 
-## Tech Focus
+## Current Growth Focus
 
-Unity 6, C#, Unity Development, Gameplay Logic, UI Flow, Scene Setup, Prefab Setup, ScriptableObjects, Object Pooling, MVC/SRP, Event-driven Systems, New Input System, Physics2D, DOTween, Unity Profiler, Git, Android, PC, WebGL
-
----
-
-## Contact
-
-Email: OleksandrTokarevDev@gmail.com  
-LinkedIn: https://www.linkedin.com/in/oleksandrtokarev/  
-Location: Finland
+- PlayMode/EditMode tests for Unity gameplay systems.
+- Addressables and stronger asset lifecycle management.
+- Mobile profiling with real device capture and documented before/after results.
+- More short gameplay videos/GIFs for project READMEs and portfolio pages.
+- English communication for international Unity teams.
