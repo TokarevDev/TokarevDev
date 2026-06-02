@@ -80,5 +80,4 @@ Unity 6, C#, gameplay programming, UGUI, Input System, ScriptableObjects, event-
 - PlayMode/EditMode tests for Unity gameplay systems.
 - Addressables and stronger asset lifecycle management.
 - Mobile profiling with real device capture and documented before/after results.
-- More short gameplay videos/GIFs for project READMEs and portfolio pages.
 - English communication for international Unity teams.
