@@ -38,11 +38,11 @@ What it demonstrates:
 - Popup service, UI screens, result flow, and animated feedback.
 - Unity Ads integration with rewarded/interstitial flow, load timeout, resume handling, and online/offline checks.
 
-STAR/CARE proof:
+Impact:
 
-- Context: turn a small prototype into a complete Android game that could pass store review.
-- Action: owned combat flow, AI, persistence, UI states, ads, Android build preparation, and publishing steps.
-- Result: public Google Play release with reviewable source code and gameplay media.
+- Challenge: turn a small prototype into a complete Android game that could pass store review.
+- Work: owned combat flow, AI, persistence, UI states, ads, Android build preparation, and publishing steps.
+- Outcome: public Google Play release with reviewable source code and gameplay media.
 
 Code review map:
 
@@ -66,11 +66,11 @@ What it demonstrates:
 - Reward roll/apply services separated from UI binding and gameplay effects.
 - Custom Unity Editor balance lab for deterministic reward/HP simulations.
 
-STAR/CARE proof:
+Impact:
 
-- Context: mobile survival gameplay needed scalable combat, rewards, and tuning instead of one-off prototype logic.
-- Action: separated data, runtime systems, UI binding, bootstrap, pooling, and balance simulation tools.
-- Result: closed test passed; systems are easier to tune, profile, and review in code.
+- Challenge: mobile survival gameplay needed scalable combat, rewards, and tuning instead of one-off prototype logic.
+- Work: separated data, runtime systems, UI binding, bootstrap, pooling, and balance simulation tools.
+- Outcome: closed test passed; systems are easier to tune, profile, and review in code.
 
 Code review map:
 
@@ -82,6 +82,6 @@ Code review map:
 
 Unity vendor packages and imported assets are present in the repository, but the portfolio-relevant code lives under `Assets/_Project/App/`.
 
-## Core Stack & Keywords
+## Core Stack
 
 Unity 6, C#, gameplay programming, UI/UGUI, ScriptableObjects, event-driven systems, Strategy Pattern, object pooling, Physics2D, DOTween, Unity Ads, Unity Profiler, Git, Android, PC, WebGL.
