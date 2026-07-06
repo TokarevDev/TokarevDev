@@ -1,6 +1,6 @@
-# Oleksandr Tokarev - Unity Developer / C# Gameplay Programmer
+# Oleksandr Tokarev - Unity C# Developer / C# Gameplay Programmer
 
-Unity C# Developer based in Finland with 2+ years of hands-on Unity experience. I build playable gameplay features, UI flow, data-driven systems, and stable Android, PC, and WebGL builds.
+Unity C# Developer based in Finland with 2+ years of hands-on Unity experience. I build gameplay features, UI/UGUI flow, data-driven systems, and stable Android, PC, and WebGL builds.
 
 Portfolio: https://tokarevdev.github.io/
 
@@ -11,9 +11,9 @@ My strongest area is connecting clean C# architecture with practical Unity imple
 ## Main Links
 
 - Portfolio / CV / project hub: https://tokarevdev.github.io/
-- Last Seed Survivor: https://github.com/TokarevDev/Force_of_Nature_Last_Seed
-- Emoji Battle: https://github.com/TokarevDev/Emoji_Battle
 - Google Play release: https://play.google.com/store/apps/details?id=com.sd7gamestudio.emojibattle
+- Emoji Battle source: https://github.com/TokarevDev/Emoji_Battle
+- Last Seed Survivor source: https://github.com/TokarevDev/Force_of_Nature_Last_Seed
 - WebGL prototypes: https://sd7games.itch.io/
 
 ## What I Can Own
@@ -25,28 +25,6 @@ My strongest area is connecting clean C# architecture with practical Unity imple
 - Delivery workflow: Android builds, WebGL/PC build preparation, Unity debugging, refactoring, scene/prefab setup, and technical documentation.
 
 ## Main Projects
-
-### Last Seed Survivor
-
-Current Unity 6 mobile auto-shooter project focused on modular gameplay systems, reward choices, pooled projectiles, segmented enemy logic, balance tooling, and Android release preparation.
-
-What it demonstrates:
-
-- Modular weapon systems with runtime stat modifiers.
-- ScriptableObject-driven rewards, rarities, HP scaling, and pressure tuning.
-- Projectile and enemy segment pooling to reduce runtime object churn.
-- Reward roll/apply services separated from UI binding and gameplay effects.
-- Custom Unity Editor balance lab for deterministic reward/HP simulations.
-
-Code review map:
-
-- Main project code: `Assets/_Project/App/`
-- Bootstrap and scene startup: `Assets/_Project/App/Bootstrap/`
-- Gameplay combat, weapons, projectiles, and rewards: `Assets/_Project/App/Gameplay/Combat/`
-- Segmented enemy systems and balance tooling: `Assets/_Project/App/Gameplay/Enemy/Worm/`
-- Presentation/UI-related gameplay flow: `Assets/_Project/App/Presentation/`
-
-Unity vendor packages and imported assets are present in the repository, but the portfolio-relevant code lives under `Assets/_Project/App/`.
 
 ### Emoji Battle
 
@@ -60,6 +38,12 @@ What it demonstrates:
 - Popup service, UI screens, result flow, and animated feedback.
 - Unity Ads integration with rewarded/interstitial flow, load timeout, resume handling, and online/offline checks.
 
+STAR/CARE proof:
+
+- Context: turn a small prototype into a complete Android game that could pass store review.
+- Action: owned combat flow, AI, persistence, UI states, ads, Android build preparation, and publishing steps.
+- Result: public Google Play release with reviewable source code and gameplay media.
+
 Code review map:
 
 - Main project code: `Assets/Scripts/`
@@ -70,6 +54,34 @@ Code review map:
 
 Unity vendor packages and imported assets are present in the repository, but the portfolio-relevant code lives under `Assets/Scripts/`.
 
-## Technical Focus
+### Last Seed Survivor
+
+Current Unity 6 mobile auto-shooter project focused on modular gameplay systems, reward choices, pooled projectiles, segmented enemy logic, balance tooling, and Android release preparation.
+
+What it demonstrates:
+
+- Modular weapon systems with runtime stat modifiers.
+- ScriptableObject-driven rewards, rarities, HP scaling, and pressure tuning.
+- Projectile and enemy segment pooling to reduce runtime object churn.
+- Reward roll/apply services separated from UI binding and gameplay effects.
+- Custom Unity Editor balance lab for deterministic reward/HP simulations.
+
+STAR/CARE proof:
+
+- Context: mobile survival gameplay needed scalable combat, rewards, and tuning instead of one-off prototype logic.
+- Action: separated data, runtime systems, UI binding, bootstrap, pooling, and balance simulation tools.
+- Result: closed test passed; systems are easier to tune, profile, and review in code.
+
+Code review map:
+
+- Main project code: `Assets/_Project/App/`
+- Bootstrap and scene startup: `Assets/_Project/App/Bootstrap/`
+- Gameplay combat, weapons, projectiles, and rewards: `Assets/_Project/App/Gameplay/Combat/`
+- Segmented enemy systems and balance tooling: `Assets/_Project/App/Gameplay/Enemy/Worm/`
+- Presentation/UI-related gameplay flow: `Assets/_Project/App/Presentation/`
+
+Unity vendor packages and imported assets are present in the repository, but the portfolio-relevant code lives under `Assets/_Project/App/`.
+
+## Core Stack & Keywords
 
 Unity 6, C#, gameplay programming, UI/UGUI, ScriptableObjects, event-driven systems, Strategy Pattern, object pooling, Physics2D, DOTween, Unity Ads, Unity Profiler, Git, Android, PC, WebGL.
