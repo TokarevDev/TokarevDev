@@ -2,9 +2,7 @@
 
 Unity C# Developer based in Finland with 2+ years of hands-on Unity experience. I build gameplay features, UI/UGUI flow, data-driven systems, and stable Android, PC, and WebGL builds.
 
-Portfolio: https://tokarevdev.github.io/
-
-I have shipped a complete Android game on Google Play and built Unity projects covering gameplay programming, UI/UGUI, ScriptableObject configs, save/load, ads integration, object pooling, debugging, profiling, and build preparation.
+I have shipped a complete Android game on Google Play and built Unity projects covering gameplay programming, UI/UGUI, ScriptableObject configs, save/load, ads integration, object pooling, debugging, profiling, build preparation, and reviewable source code.
 
 My strongest area is connecting clean C# architecture with practical Unity implementation: systems that are easier to extend, balance, debug, and ship without unnecessary overengineering.
 
@@ -15,6 +13,7 @@ My strongest area is connecting clean C# architecture with practical Unity imple
 - Emoji Battle source: https://github.com/TokarevDev/Emoji_Battle
 - Last Seed Survivor source: https://github.com/TokarevDev/Force_of_Nature_Last_Seed
 - WebGL prototypes: https://sd7games.itch.io/
+- LinkedIn: https://www.linkedin.com/in/oleksandr-tokarev/
 
 ## What I Can Own
 
@@ -22,13 +21,21 @@ My strongest area is connecting clean C# architecture with practical Unity imple
 - UI flow: UGUI screens, menus, popups, gameplay HUD, result flow, player feedback, and state-driven UI updates.
 - Maintainable C#: SRP-style components, event-driven communication where it reduces coupling, service abstractions, and clear data/runtime separation.
 - Mobile performance: object pooling, GC allocation awareness, cached references, profiler-minded iteration, and fewer runtime scene searches.
-- Delivery workflow: Android builds, WebGL/PC build preparation, Unity debugging, refactoring, scene/prefab setup, and technical documentation.
+- Delivery workflow: Android builds, Google Play release preparation, WebGL/PC builds, Unity debugging, Git/GitHub source review readiness, refactoring, scene/prefab setup, and technical documentation.
 
 ## Main Projects
 
 ### Emoji Battle
 
 Released Android game built in Unity 6 and C#, taken from prototype to public Google Play release.
+
+Impact:
+
+- Challenge: turn a small prototype into a complete Android game that could pass store review and be maintained after release.
+- Action: owned combat flow, AI, persistence, UI states, popups, ads, Android build preparation, publishing steps, and post-release runtime tuning.
+- Result: released a complete Android game on Google Play with reviewable source code, gameplay media, ads flow, persistence, and a complete player loop.
+
+Post-release update: added automatic frame-rate selection for supported 90/120 Hz devices to improve gameplay smoothness on higher-refresh mobile screens.
 
 What it demonstrates:
 
@@ -37,12 +44,6 @@ What it demonstrates:
 - Progression, rewards, avatar selection, settings, and persistent player data.
 - Popup service, UI screens, result flow, and animated feedback.
 - Unity Ads integration with rewarded/interstitial flow, load timeout, resume handling, and online/offline checks.
-
-Impact:
-
-- Challenge: turn a small prototype into a complete Android game that could pass store review.
-- Work: owned combat flow, AI, persistence, UI states, ads, Android build preparation, and publishing steps.
-- Outcome: public Google Play release with reviewable source code and gameplay media.
 
 Code review map:
 
@@ -56,7 +57,13 @@ Unity vendor packages and imported assets are present in the repository, but the
 
 ### Last Seed Survivor
 
-Current Unity 6 mobile auto-shooter project focused on modular gameplay systems, reward choices, pooled projectiles, segmented enemy logic, balance tooling, and Android release preparation.
+Unity 6 mobile 2D auto-shooter/survival project focused on modular combat, ScriptableObject rewards, segmented enemy behavior, balance simulations, pooling, and Android release preparation.
+
+Impact:
+
+- Challenge: mobile survival gameplay needed scalable combat, rewards, enemy pressure, and tuning instead of one-off prototype logic.
+- Action: separated data, runtime systems, UI binding, bootstrap, pooling, segmented enemy logic, and balance simulation tools.
+- Result: closed test passed; Android release preparation continues with modular combat, pooled runtime systems, and balance tooling ready for review.
 
 What it demonstrates:
 
@@ -65,12 +72,6 @@ What it demonstrates:
 - Projectile and enemy segment pooling to reduce runtime object churn.
 - Reward roll/apply services separated from UI binding and gameplay effects.
 - Custom Unity Editor balance lab for deterministic reward/HP simulations.
-
-Impact:
-
-- Challenge: mobile survival gameplay needed scalable combat, rewards, and tuning instead of one-off prototype logic.
-- Work: separated data, runtime systems, UI binding, bootstrap, pooling, and balance simulation tools.
-- Outcome: closed test passed; systems are easier to tune, profile, and review in code.
 
 Code review map:
 
@@ -84,4 +85,4 @@ Unity vendor packages and imported assets are present in the repository, but the
 
 ## Core Stack
 
-Unity 6, C#, gameplay programming, UI/UGUI, ScriptableObjects, event-driven systems, Strategy Pattern, object pooling, Physics2D, DOTween, Unity Ads, Unity Profiler, Git, Android, PC, WebGL.
+Unity 6, C#, gameplay programming, UI/UGUI, ScriptableObjects, event-driven systems, Strategy Pattern, object pooling, Physics2D, DOTween, Unity Ads, Unity Profiler, Git, GitHub, version control, Android, PC, WebGL.
