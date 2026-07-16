@@ -1,10 +1,12 @@
 # Oleksandr Tokarev - Unity C# Developer / C# Gameplay Programmer
 
-Unity C# Developer based in Finland with 2+ years of hands-on Unity experience. I build gameplay features, UI/UGUI flow, data-driven systems, and stable Android, PC, and WebGL builds.
+Unity C# Developer based in Finland, available exclusively for remote work. I build gameplay features, UI/UGUI flow, data-driven systems, and stable Android, PC, and WebGL releases.
 
 I have shipped a complete Android game on Google Play and built Unity projects covering gameplay programming, UI/UGUI, ScriptableObject configs, save/load, ads integration, object pooling, debugging, profiling, build preparation, and reviewable source code.
 
-My strongest area is connecting clean C# architecture with practical Unity implementation: systems that are easier to extend, balance, debug, and ship without unnecessary overengineering.
+My strongest area is connecting clean C# architecture with practical Unity implementation: explicit dependencies, controlled lifecycle, modular systems, and code that is easier to extend, balance, debug, and ship without unnecessary overengineering.
+
+I am open to remote Unity C# Developer / C# Gameplay Programmer roles, freelance work, and contracts. I am not considering onsite or hybrid positions.
 
 ## Main Links
 
@@ -19,7 +21,9 @@ My strongest area is connecting clean C# architecture with practical Unity imple
 
 - Gameplay systems: combat, weapons, projectiles, enemies, rewards, progression, player flow, and complete playable loops.
 - UI flow: UGUI screens, menus, popups, gameplay HUD, result flow, player feedback, and state-driven UI updates.
-- Maintainable C#: SRP-style components, event-driven communication where it reduces coupling, service abstractions, and clear data/runtime separation.
+- Maintainable C#: SOLID/SRP, Assembly Definition boundaries, event-driven communication where it reduces coupling, service abstractions, and clear data/runtime/UI separation.
+- Explicit dependencies: composition roots, Zenject/DI containers, constructor or method injection for pure C# services, and minimal hidden scene coupling.
+- Async lifecycle: UniTask, async/await, CancellationToken, lifecycle-bound cancellation, safe scene transitions, and explicit cleanup.
 - Mobile performance: object pooling, GC allocation awareness, cached references, profiler-minded iteration, and fewer runtime scene searches.
 - Delivery workflow: Android builds, Google Play release preparation, WebGL/PC builds, Unity debugging, Git/GitHub source review readiness, refactoring, scene/prefab setup, and technical documentation.
 
@@ -85,4 +89,4 @@ Unity vendor packages and imported assets are present in the repository, but the
 
 ## Core Stack
 
-Unity 6, C#, gameplay programming, UI/UGUI, ScriptableObjects, event-driven systems, Strategy Pattern, object pooling, Physics2D, DOTween, Unity Ads, Unity Profiler, Git, GitHub, version control, Android, PC, WebGL.
+Unity 2022 LTS / Unity 6, C#, gameplay programming, UI/UGUI, ScriptableObjects, Assembly Definitions, SOLID/SRP, Strategy Pattern, event-driven systems, Zenject, DI containers, composition root, UniTask, async/await, CancellationToken, object pooling, Physics2D, DOTween, Unity Ads, Unity Profiler, Git/GitHub, Android, PC, WebGL.
