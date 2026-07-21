@@ -1,92 +1,100 @@
-# Oleksandr Tokarev - Unity C# Developer / C# Gameplay Programmer
+# Oleksandr Tokarev - Unity Developer | C# Gameplay Programmer
 
-Unity C# Developer based in Finland, available exclusively for remote work. I build gameplay features, UI/UGUI flow, data-driven systems, and stable Android, PC, and WebGL releases.
+Unity Developer based in Finland with nearly three years of hands-on C# gameplay programming across Android, PC, and WebGL. Available fully remote through employment or B2B.
 
-I have shipped a complete Android game on Google Play and built Unity projects covering gameplay programming, UI/UGUI, ScriptableObject configs, save/load, ads integration, object pooling, debugging, profiling, build preparation, and reviewable source code.
+I solo-developed and shipped an Android game on Google Play, owning architecture, implementation, profiling, debugging, build preparation, publishing, and post-release support. I build maintainable, performance-aware Unity systems with SOLID/SRP, dependency injection, Assembly Definitions, ScriptableObjects, UniTask, and clear runtime/presentation boundaries.
 
-My strongest area is connecting clean C# architecture with practical Unity implementation: explicit dependencies, controlled lifecycle, modular systems, and code that is easier to extend, balance, debug, and ship without unnecessary overengineering.
-
-I am open to remote Unity C# Developer / C# Gameplay Programmer roles, freelance work, and contracts. I am not considering onsite or hybrid positions.
+Email: **otokarevdev@gmail.com**
 
 ## Main Links
 
-- Portfolio / CV / project hub: https://tokarevdev.github.io/
+- Portfolio and CV: https://tokarevdev.github.io/
 - Google Play release: https://play.google.com/store/apps/details?id=com.sd7gamestudio.emojibattle
-- Emoji Battle source: https://github.com/TokarevDev/Emoji_Battle
-- Last Seed Survivor source: https://github.com/TokarevDev/Force_of_Nature_Last_Seed
-- WebGL prototypes: https://sd7games.itch.io/
 - LinkedIn: https://www.linkedin.com/in/oleksandr-tokarev/
+- Gameplay prototypes: https://sd7games.itch.io/
 
-## What I Can Own
+## Professional Focus
 
-- Gameplay systems: combat, weapons, projectiles, enemies, rewards, progression, player flow, and complete playable loops.
-- UI flow: UGUI screens, menus, popups, gameplay HUD, result flow, player feedback, and state-driven UI updates.
-- Maintainable C#: SOLID/SRP, Assembly Definition boundaries, event-driven communication where it reduces coupling, service abstractions, and clear data/runtime/UI separation.
-- Explicit dependencies: composition roots, Zenject/DI containers, constructor or method injection for pure C# services, and minimal hidden scene coupling.
-- Async lifecycle: UniTask, async/await, CancellationToken, lifecycle-bound cancellation, safe scene transitions, and explicit cleanup.
-- Mobile performance: object pooling, GC allocation awareness, cached references, profiler-minded iteration, and fewer runtime scene searches.
-- Delivery workflow: Android builds, Google Play release preparation, WebGL/PC builds, Unity debugging, Git/GitHub source review readiness, refactoring, scene/prefab setup, and technical documentation.
+- Gameplay programming: combat, weapons, projectiles, AI strategies, progression, save/load, rewards, enemies, and runtime stat modifiers.
+- Architecture: SOLID/SRP, MVVM-style presentation, Zenject, dependency injection, composition roots, Assembly Definitions, services, events, and ScriptableObjects.
+- Async and lifecycle: UniTask, async/await, CancellationToken, lifecycle-bound cancellation, explicit subscription and resource cleanup.
+- Performance: Unity Profiler, GC allocation profiling, object pooling, cached references, mobile frame-time optimization, and no hot-path scene searches.
+- Delivery: Android, Google Play, PC, WebGL, Git/GitHub, ClickUp, task tracking, and collaborative planning.
+- Multiplayer: Netcode for GameObjects, UGS Relay, Lobby, Auth, RPCs, NetworkVariables, and lobby UI.
 
-## Main Projects
+## Featured Projects
 
-### Emoji Battle
+### Emoji Battle - Shipped Google Play Game
 
-Released Android game built in Unity 6 and C#, taken from prototype to public Google Play release.
+Public source: https://github.com/TokarevDev/Emoji_Battle
 
-Impact:
+Google Play: https://play.google.com/store/apps/details?id=com.sd7gamestudio.emojibattle
 
-- Challenge: turn a small prototype into a complete Android game that could pass store review and be maintained after release.
-- Action: owned combat flow, AI, persistence, UI states, popups, ads, Android build preparation, publishing steps, and post-release runtime tuning.
-- Result: released a complete Android game on Google Play with reviewable source code, gameplay media, ads flow, persistence, and a complete player loop.
+Development: Sep 2025 - Feb 2026
 
-Post-release update: added automatic frame-rate selection for supported 90/120 Hz devices to improve gameplay smoothness on higher-refresh mobile screens.
+Solo-developed in Unity 6 and shipped to Google Play within a six-month independent development cycle.
 
-What it demonstrates:
+Key results:
 
-- Turn-based gameplay loop and board state logic.
-- AI strategies for multiple difficulty levels.
-- Progression, rewards, avatar selection, settings, and persistent player data.
-- Popup service, UI screens, result flow, and animated feedback.
-- Unity Ads integration with rewarded/interstitial flow, load timeout, resume handling, and online/offline checks.
+- Owned the full player loop, progression, save data, UGUI flow, Unity Ads, store preparation, and post-release support.
+- Implemented three AI difficulty modes through Strategy Pattern, separating decision logic from board rendering and lobby UI.
+- Improved performance on older Android devices from approximately 30 FPS to a stable 60 FPS.
+- Validated adaptive 90 FPS and 120 FPS targets on supported devices by reducing UI draw calls and separating gameplay from presentation.
 
 Code review map:
 
-- Main project code: `Assets/Scripts/`
 - Domain logic: `Assets/Scripts/Domain/`
-- Persistence and data services: `Assets/Scripts/Infrastructure/`
-- Gameplay, lobby, UI, and popups: `Assets/Scripts/Presentation/`
-- Bootstrap and runtime setup: `Assets/Scripts/App/`
+- Persistence and services: `Assets/Scripts/Infrastructure/`
+- Gameplay and UI: `Assets/Scripts/Presentation/`
+- Bootstrap: `Assets/Scripts/App/`
 
-Unity vendor packages and imported assets are present in the repository, but the portfolio-relevant code lives under `Assets/Scripts/`.
+### Last Seed Survivor - Mobile 2D Auto-Shooter
 
-### Last Seed Survivor
+Public source: https://github.com/TokarevDev/Force_of_Nature_Last_Seed
 
-Unity 6 mobile 2D auto-shooter/survival project focused on modular combat, ScriptableObject rewards, segmented enemy behavior, balance simulations, pooling, and Android release preparation.
+Development: Mar 2026 - present
 
-Impact:
+Unity 6 mobile survival project focused on modular combat, weapons, runtime stat modifiers, Physics2D enemies, and ScriptableObject-driven reward selection with rarity and DPS-aware tuning.
 
-- Challenge: mobile survival gameplay needed scalable combat, rewards, enemy pressure, and tuning instead of one-off prototype logic.
-- Action: separated data, runtime systems, UI binding, bootstrap, pooling, segmented enemy logic, and balance simulation tools.
-- Result: closed test passed; Android release preparation continues with modular combat, pooled runtime systems, and balance tooling ready for review.
+Key results:
 
-What it demonstrates:
-
-- Modular weapon systems with runtime stat modifiers.
-- ScriptableObject-driven rewards, rarities, HP scaling, and pressure tuning.
-- Projectile and enemy segment pooling to reduce runtime object churn.
-- Reward roll/apply services separated from UI binding and gameplay effects.
-- Custom Unity Editor balance lab for deterministic reward/HP simulations.
+- Pooled projectiles and enemy segments to reduce runtime object churn in high-density combat.
+- Separated gameplay, presentation, runtime data, UI binding, bootstrap, and balance tooling by responsibility.
+- Built a one-click deterministic test that runs 4,000 battles per cycle.
+- The cycle covers four player-behavior scenarios of 1,000 battles each, including ad engagement and revive combinations.
+- Repeated runs completed with zero detected combat-logic failures.
 
 Code review map:
 
-- Main project code: `Assets/_Project/App/`
-- Bootstrap and scene startup: `Assets/_Project/App/Bootstrap/`
-- Gameplay combat, weapons, projectiles, and rewards: `Assets/_Project/App/Gameplay/Combat/`
-- Segmented enemy systems and balance tooling: `Assets/_Project/App/Gameplay/Enemy/Worm/`
-- Presentation/UI-related gameplay flow: `Assets/_Project/App/Presentation/`
+- Bootstrap: `Assets/_Project/App/Bootstrap/`
+- Combat, weapons, projectiles, and rewards: `Assets/_Project/App/Gameplay/Combat/`
+- Segmented enemy and balance tools: `Assets/_Project/App/Gameplay/Enemy/Worm/`
+- Presentation: `Assets/_Project/App/Presentation/`
 
-Unity vendor packages and imported assets are present in the repository, but the portfolio-relevant code lives under `Assets/_Project/App/`.
+### 2D Asteroids Survival - Architecture Sample
 
-## Core Stack
+Public source: https://github.com/TokarevDev/2D_Asteroids_Survival
 
-Unity 2022 LTS / Unity 6, C#, gameplay programming, UI/UGUI, ScriptableObjects, Assembly Definitions, SOLID/SRP, Strategy Pattern, event-driven systems, Zenject, DI containers, composition root, UniTask, async/await, CancellationToken, object pooling, Physics2D, DOTween, Unity Ads, Unity Profiler, Git/GitHub, Android, PC, WebGL.
+Compact Unity 2022 LTS survival prototype built as a reviewable architecture sample.
+
+What it demonstrates:
+
+- Four Assembly Definition modules: Core, Infrastructure, Gameplay, and UI.
+- Zenject composition roots, dependency injection, and SignalBus communication.
+- UniTask-based bootstrap and scene transitions.
+- Input System behind `IInputReader` and scene loading behind `ISceneLoader`.
+- MVVM-style game-over flow with lifecycle-safe subscriptions.
+- ScriptableObject-driven asteroid variants.
+- Prewarmed projectile and asteroid pools with duplicate-return protection.
+- Cached references and allocation-conscious Update/FixedUpdate paths.
+
+## Technical Stack
+
+Unity 2022 LTS / Unity 6, C#, MonoBehaviour lifecycle, UGUI, Input System, Physics2D, DOTween, URP, SOLID/SRP, MVVM, Zenject, dependency injection, composition roots, Assembly Definitions, services, events, ScriptableObjects, UniTask, async/await, CancellationToken, object pooling, Unity Profiler, Netcode for GameObjects, UGS Relay/Lobby/Auth, Git/GitHub.
+
+## Background
+
+- Independent Unity Developer, Sep 2023 - present.
+- Delivered playable builds for Android, PC, and WebGL.
+- Education: Xamk - South-Eastern Finland University of Applied Sciences, Introduction to Video Games Creation, Flexible Modular Open UAS Studies, 1-35 ECTS, Jul-Dec 2026.
+- Languages: English B1 (improving), Russian native, Ukrainian native.
