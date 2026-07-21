@@ -30,9 +30,9 @@ Public source: https://github.com/TokarevDev/Emoji_Battle
 
 Google Play: https://play.google.com/store/apps/details?id=com.sd7gamestudio.emojibattle
 
-Development: Sep 2025 - Feb 2026
+Active development: approximately three months
 
-Solo-developed in Unity 6 and shipped to Google Play within a six-month independent development cycle.
+Solo-developed in Unity 6 and shipped to Google Play within a three-month independent development cycle.
 
 Key results:
 
