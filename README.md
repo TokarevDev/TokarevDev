@@ -1,8 +1,8 @@
 # Oleksandr Tokarev - Unity Developer | C# Gameplay Programmer
 
-Unity Developer based in Finland with more than 5 years of commercial C# gameplay development experience across Android, PC, and WebGL. Available for fully remote employment or B2B opportunities.
+Unity Developer based in Finland with 3+ years of independent C# gameplay development experience across Android, PC, and WebGL. Available for fully remote employment or B2B opportunities.
 
-My commercial work is not published here because of confidentiality and ownership restrictions. The projects presented on this GitHub profile are independent personal projects designed and developed outside work. They demonstrate my approach to gameplay architecture, performance, lifecycle management, debugging, build delivery, and post-release support.
+The projects presented on this GitHub profile are independent personal projects that I designed and developed. They demonstrate my approach to gameplay architecture, performance, lifecycle management, debugging, build delivery, and post-release support.
 
 I build maintainable, performance-aware Unity systems with clear responsibility boundaries, explicit dependencies, predictable object lifecycles, and production-focused workflows.
 
@@ -78,8 +78,8 @@ Unity 2022 LTS / Unity 6, C#, MonoBehaviour lifecycle, UGUI, Input System, Physi
 
 ## Background
 
-- More than 5 years of commercial Unity development experience.
-- Public GitHub projects are independent personal work and do not represent confidential commercial projects.
+- 3+ years of independent Unity development experience.
+- Public GitHub projects are independent personal work with reviewable source code and delivery evidence.
 - Delivered playable builds across Android, PC, and WebGL.
 - Education: Xamk - South-Eastern Finland University of Applied Sciences, Introduction to Video Games Creation, Flexible Modular Open UAS Studies, 1-35 ECTS, Jul-Dec 2026.
 - Languages: English B1 (improving), Russian native, Ukrainian native.
