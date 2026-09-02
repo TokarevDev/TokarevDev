@@ -1,85 +1,50 @@
-# Oleksandr Tokarev - Unity Developer | C# Gameplay Programmer
+# Oleksandr Tokarev — Unity Developer | C# Gameplay Programmer
 
-Unity Developer based in Finland with 3+ years of independent C# gameplay development experience across Android, PC, and WebGL. Available for fully remote employment or B2B opportunities.
+I design and implement gameplay systems in C# with clear dependency boundaries, explicit lifecycle ownership, and performance-aware Unity integration. My work focuses on maintainable production code: gameplay architecture, combat systems, runtime state, pooling, async flows, Editor tooling, and platform delivery.
 
-The projects presented on this GitHub profile are independent personal projects that I designed and developed. They demonstrate my approach to gameplay architecture, performance, lifecycle management, debugging, build delivery, and post-release support.
+The two public projects below show the source code, architecture, and engineering decisions behind playable Unity projects.
 
-I build maintainable, performance-aware Unity systems with clear responsibility boundaries, explicit dependencies, predictable object lifecycles, and production-focused workflows.
+## Selected Work
 
-Email: **otokarevdev@gmail.com**
+### 2D Asteroids Survival
 
-## Main Links
+[Case study](https://tokarevdev.github.io/projects/asteroids.html) · [Source code](https://github.com/TokarevDev/2D_Asteroids_Survival) · [Gameplay](https://youtu.be/MV7N_iHXxiU)
 
-- Portfolio and CV: https://tokarevdev.github.io/
+A complete Unity 2022 LTS survival game built around explicit dependency direction and predictable gameplay lifecycle.
+
+- Custom fixed-step 2D physics, collision tests, toroidal coordinates, asteroid fragmentation, projectiles, multi-target laser, UFO pursuit, scoring, and session flow.
+- Core, Infrastructure, Gameplay, and UI separated through Assembly Definitions.
+- Zenject composition roots and dependency injection without runtime service lookup.
+- MVVM-style game-over presentation, SignalBus integration, and lifecycle-bound UniTask scene transitions.
+- Pooled gameplay entities and separate desktop/mobile input strategies behind shared contracts.
+
+### Last Seed Survivor
+
+[Case study](https://tokarevdev.github.io/projects/last-seed.html) · [Source code](https://github.com/TokarevDev/Force_of_Nature_Last_Seed) · [Gameplay](https://youtube.com/shorts/HiQBlYjienI?feature=share)
+
+A Unity 6 mobile auto-shooter demonstrating modular combat, data-driven progression, pooled runtime systems, and repeatable balance validation.
+
+- ScriptableObject-authored rewards update isolated runtime weapon state while roll, apply, and presentation responsibilities remain separate.
+- Segmented enemy logic is divided into pattern building, creation, movement, section health, combat, balance, and presentation.
+- Projectiles and enemy segments use pooling to control runtime object churn in dense combat.
+- A deterministic Unity Editor tool evaluates the same reward data, weapon configuration, HP rules, and DPS model used by gameplay.
+
+## Engineering Focus
+
+- **Gameplay:** combat, weapons, projectiles, enemies, rewards, progression, input, and session state.
+- **Architecture:** SOLID/SRP, dependency injection, composition roots, Assembly Definitions, MVVM-style UI, events, and ScriptableObjects.
+- **Lifecycle:** explicit ownership, symmetric event subscriptions, cancellation-aware async flows, and predictable cleanup.
+- **Performance:** Unity Profiler, object pooling, cached references, allocation-aware hot paths, and mobile frame-time constraints.
+- **Tooling and delivery:** Unity Editor tools, deterministic validation, Android, Windows, WebGL, Git, and GitHub.
+
+## Core Stack
+
+Unity 2022 LTS / Unity 6 · C# · Physics2D · Input System · UGUI · Zenject · UniTask · ScriptableObjects · Assembly Definitions · Unity Profiler · Git
+
+## Contact
+
+Based in Finland and open to remote Unity gameplay and systems work.
+
+- Portfolio: https://tokarevdev.github.io/
 - LinkedIn: https://www.linkedin.com/in/oleksandr-tokarev/
-- Google Play release: https://play.google.com/store/apps/details?id=com.sd7gamestudio.emojibattle
-- Gameplay prototypes: https://sd7games.itch.io/
-
-## Featured Projects
-
-### 2D Asteroids Survival - Complete PC and Android Game
-
-- Case study and playable builds: https://tokarevdev.github.io/projects/asteroids.html
-- Public source: https://github.com/TokarevDev/2D_Asteroids_Survival
-- Gameplay video: https://youtu.be/MV7N_iHXxiU
-
-A feature-complete Unity 2022 LTS survival game independently designed and developed from scratch, inspired by the classic Asteroids formula.
-
-Key engineering work:
-
-- Built custom fixed-step 2D physics, collision tests, toroidal world coordinates, asteroid fragmentation, projectiles, a rechargeable multi-target laser, UFO pursuit, scoring, and a three-life survival loop.
-- Separated Core, Infrastructure, Gameplay, and UI through four Assembly Definitions with explicit dependency direction.
-- Used Zenject composition roots, dependency injection, interfaces, factories, SignalBus, and MVVM-style UI to keep responsibilities clear.
-- Implemented separate desktop and mobile input strategies behind shared contracts.
-- Pooled asteroids, fragments, UFOs, projectiles, logical entities, and collision VFX to control runtime object churn.
-- Delivered playable Windows and Android builds with public source and a gameplay demonstration.
-
-### Emoji Battle - Shipped Google Play Game
-
-- Case study: https://tokarevdev.github.io/projects/emoji-battle.html
-- Public source: https://github.com/TokarevDev/Emoji_Battle
-- Google Play: https://play.google.com/store/apps/details?id=com.sd7gamestudio.emojibattle
-
-Solo-developed in Unity 6 and shipped to Google Play within a three-month independent development cycle.
-
-Key results:
-
-- Owned the complete player loop, progression, persistence, UGUI flow, advertising, store preparation, publishing, and post-release support.
-- Implemented three AI difficulty modes through the Strategy Pattern, separating decision logic from board rendering and lobby UI.
-- Improved performance on older Android devices from approximately 30 FPS to a stable 60 FPS.
-- Validated adaptive 90 FPS and 120 FPS targets on supported devices by reducing UI draw calls and separating gameplay from presentation.
-
-### Last Seed Survivor - Modular Mobile Survival Systems
-
-- Case study: https://tokarevdev.github.io/projects/last-seed.html
-- Public source: https://github.com/TokarevDev/Force_of_Nature_Last_Seed
-
-Unity 6 mobile auto-shooter focused on modular combat, weapons, runtime stat modifiers, Physics2D enemies, ScriptableObject-driven rewards, pooling, and deterministic balance tooling.
-
-Key results:
-
-- Separated gameplay, presentation, runtime data, UI binding, bootstrap, and balance tooling by responsibility.
-- Pooled projectiles and enemy segments to reduce runtime object churn in high-density combat.
-- Built a one-click deterministic test that runs 4,000 battles per cycle across four player-behavior scenarios.
-- Repeated test cycles completed with zero detected combat-logic failures.
-
-## Professional Focus
-
-- Gameplay programming: combat, weapons, projectiles, enemies, AI strategies, progression, rewards, save/load, and runtime stat systems.
-- Architecture: SOLID/SRP, dependency injection, composition roots, Assembly Definitions, MVVM-style presentation, services, events, and ScriptableObjects.
-- Async and lifecycle: UniTask, async/await, CancellationToken, lifecycle-bound cancellation, symmetric subscriptions, and explicit resource cleanup.
-- Performance: Unity Profiler, GC allocation profiling, object pooling, cached references, mobile frame-time optimization, and allocation-conscious hot paths.
-- Delivery: Android, Google Play, PC, WebGL, build preparation, publishing, Git/GitHub, task tracking, and collaborative planning.
-- Multiplayer: Netcode for GameObjects, UGS Relay/Lobby/Auth, RPCs, NetworkVariables, and lobby UI.
-
-## Technical Stack
-
-Unity 2022 LTS / Unity 6, C#, MonoBehaviour lifecycle, UGUI, Input System, Physics2D, DOTween, URP, SOLID/SRP, MVVM, Zenject, dependency injection, composition roots, Assembly Definitions, services, events, ScriptableObjects, UniTask, async/await, CancellationToken, object pooling, Unity Profiler, Netcode for GameObjects, UGS Relay/Lobby/Auth, Git/GitHub.
-
-## Background
-
-- 3+ years of independent Unity development experience.
-- Public GitHub projects are independent personal work with reviewable source code and delivery evidence.
-- Delivered playable builds across Android, PC, and WebGL.
-- Education: Xamk - South-Eastern Finland University of Applied Sciences, Introduction to Video Games Creation, Flexible Modular Open UAS Studies, 1-35 ECTS, Jul-Dec 2026.
-- Languages: English B1 (improving), Russian native, Ukrainian native.
+- Email: **otokarevdev@gmail.com**
