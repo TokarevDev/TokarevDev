@@ -25,17 +25,19 @@ An architecture-first Unity 6 mobile auto-shooter built around explicit ownershi
 
 [Case study](https://tokarevdev.github.io/projects/asteroids.html) · [Source code](https://github.com/TokarevDev/2D_Asteroids_Survival) · [Gameplay](https://youtu.be/MV7N_iHXxiU)
 
-A complete Unity 2022 LTS survival game built around explicit dependency direction and a predictable gameplay lifecycle.
+A feature-complete Unity 2022 LTS survival game built around custom simulation, explicit dependency direction, and predictable runtime ownership.
 
-- Custom fixed-step 2D physics, collision tests, toroidal coordinates, asteroid fragmentation, projectiles, multi-target laser, UFO pursuit, scoring, and session flow.
-- Core, Infrastructure, Gameplay, and UI separated through Assembly Definitions.
-- Zenject composition roots and dependency injection without runtime service lookup.
-- MVVM-style game-over presentation, SignalBus integration, and lifecycle-bound UniTask scene transitions.
-- Pooled gameplay entities and separate desktop/mobile input strategies behind shared contracts.
+- `GameplayFixedLoop` is the single fixed-step entry point, running named movement, integration, projectile, world-boundary, collision, and presentation stages over custom 2D physics and toroidal coordinates.
+- Core, Infrastructure, Gameplay, and UI are separated through Assembly Definitions; domain installers compose them with Zenject without runtime service lookup or magic execution-order values.
+- Validated JSON maps hold player, enemy, and world parameters and reject missing, unknown, null, duplicate, or incorrectly cased enemy keys before gameplay starts.
+- Generic `ObjectPool<T>` storage and `EnemyPool<TEnemy, TInitialization>` centralize FIFO reuse, duplicate-return protection, initialization, registration, activation, teardown, and rollback for enemies, projectiles, and collision VFX.
+- Desktop and mobile strategies use Unity's classic `Input` API behind one contract; `PlayerInputStateProvider` samples the selected strategy once per rendered frame for every gameplay consumer.
+- MVVM-style game-over UI, SignalBus events, guarded UniTask navigation, Firebase Analytics, and optional AdMob adapters keep presentation and platform concerns outside gameplay rules.
+- Playable Windows and Android builds are available; final Android device and release-build validation remains an explicit delivery gate.
 
 ## Engineering Focus
 
-- **Gameplay architecture:** engine-free rules and state, ScriptableObject-authored data, narrow subsystem contracts, domain snapshots, and Unity-facing adapters.
+- **Gameplay architecture:** engine-free rules and state, validated JSON and ScriptableObject-authored data, narrow subsystem contracts, domain snapshots, and Unity-facing adapters.
 - **Composition and execution:** Zenject, SignalBus, constructor injection, domain installers, Assembly Definitions, and named frame stages instead of hidden service lookup or magic execution-order values.
 - **Lifecycle and failure safety:** validation before mutation, reverse-order rollback, best-effort cleanup, cancellation-aware async flows, symmetric subscriptions, and explicit scene ownership.
 - **Performance:** object pooling, cached and dictionary-backed lookups, allocation-aware hot paths, single-frame input sampling, profiler markers, and mobile frame-time constraints.
@@ -43,7 +45,7 @@ A complete Unity 2022 LTS survival game built around explicit dependency directi
 
 ## Core Stack
 
-Unity 2022 LTS / Unity 6 · C# · Physics2D · Input System · UGUI · Zenject · SignalBus · UniTask · ScriptableObjects · Assembly Definitions · NUnit · Unity Test Framework · Unity Profiler · Git
+Unity 2022 LTS / Unity 6 · C# · custom 2D simulation / Physics2D · classic Unity Input / Input System · UGUI · Zenject · SignalBus · UniTask · JSON / ScriptableObjects · Assembly Definitions · NUnit · Unity Test Framework · Unity Profiler · Git
 
 ## Contact
 
