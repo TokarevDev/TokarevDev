@@ -1,4 +1,4 @@
-# Oleksandr Tokarev — Unity Developer | C# Gameplay Programmer
+# Oleksandr Tokarev — Unity Developer
 
 I design and implement production-oriented gameplay systems in C#. My work keeps domain rules testable outside Unity, dependencies and frame order explicit, and runtime ownership safe across initialization, cancellation, rollback, cleanup, and scene transitions.
 
@@ -49,7 +49,7 @@ Unity 2022 LTS / Unity 6 · C# · custom 2D simulation / Physics2D · classic Un
 
 ## Contact
 
-Based in Finland and open to remote B2B or contractor roles as a Unity Developer and C# Gameplay Programmer.
+Based in Finland and open to remote B2B or contractor roles as a Unity Developer.
 
 - Portfolio: https://tokarevdev.github.io/
 - LinkedIn: https://www.linkedin.com/in/oleksandr-tokarev/
