@@ -1,6 +1,6 @@
-# Oleksandr Tokarev — Unity Developer
+# Alexander Tokarev — Unity Developer | 6+ years
 
-I design and implement production-oriented gameplay systems in C#. My work keeps domain rules testable outside Unity, dependencies and frame order explicit, and runtime ownership safe across initialization, cancellation, rollback, cleanup, and scene transitions.
+Unity Developer with 6+ years of experience designing and implementing gameplay and mobile game systems in C#. I keep domain rules testable outside Unity, dependencies and frame order explicit, and runtime ownership safe across initialization, cancellation, rollback, cleanup, and scene transitions.
 
 The two public projects below connect architectural decisions to playable behavior, source code, validation, and practical performance constraints.
 
@@ -37,15 +37,21 @@ A feature-complete Unity 2022 LTS survival game built around custom simulation, 
 
 ## Engineering Focus
 
-- **Gameplay architecture:** engine-free rules and state, validated JSON and ScriptableObject-authored data, narrow subsystem contracts, domain snapshots, and Unity-facing adapters.
-- **Composition and execution:** Zenject, SignalBus, constructor injection, domain installers, Assembly Definitions, and named frame stages instead of hidden service lookup or magic execution-order values.
-- **Lifecycle and failure safety:** validation before mutation, reverse-order rollback, best-effort cleanup, cancellation-aware async flows, symmetric subscriptions, and explicit scene ownership.
-- **Performance:** object pooling, cached and dictionary-backed lookups, allocation-aware hot paths, single-frame input sampling, profiler markers, and mobile frame-time constraints.
-- **Verification and tooling:** NUnit, Unity Test Framework, EditMode/PlayMode coverage, scene dependency and serialized-reference validation, deterministic Editor simulation, Git, and GitHub.
+- **Gameplay and progression:** combat, weapons, rewards, inventory, equipment, crafting, tutorials, save systems, stable IDs, schema migration, and idempotent state changes.
+- **Architecture and execution:** engine-free rules, narrow contracts, Zenject, SignalBus, constructor injection, Assembly Definitions, validated JSON and ScriptableObjects, and named frame stages.
+- **Async and lifecycle safety:** Addressables ownership, `async`/`await`, UniTask, `CancellationToken`, validation before mutation, reverse-order rollback, symmetric subscriptions, and deterministic cleanup.
+- **Performance and memory:** Unity Profiler, Memory Profiler, object pooling, non-alloc APIs, cached and dictionary-backed lookups, allocation-aware hot paths, and mobile frame-time constraints.
+- **Verification and delivery:** NUnit, Unity Test Framework, EditMode/PlayMode coverage, Editor tooling, content validation, Git, CI/CD, Android, iOS, and code review.
 
 ## Core Stack
 
-Unity 2022 LTS / Unity 6 · C# · custom 2D simulation / Physics2D · classic Unity Input / Input System · UGUI · Zenject · SignalBus · UniTask · JSON / ScriptableObjects · Assembly Definitions · NUnit · Unity Test Framework · Unity Profiler · Git
+Unity 2022 LTS / Unity 6 · C# · UGUI · ScriptableObjects · Addressables · Zenject · SignalBus · UniTask · UniRx · DOTween · Spine · Unity IAP · Firebase Analytics / Remote Config · JSON · NUnit · Unity Test Framework · Unity Profiler / Memory Profiler · Git / CI/CD
+
+## Education & Languages
+
+- **Xamk — South-Eastern Finland University of Applied Sciences:** Open UAS Studies, Game Development (2026)
+- **Donetsk National Technical University:** Software Engineering (2014)
+- **Languages:** Ukrainian — native · Russian — native · English — B1
 
 ## Contact
 
@@ -53,4 +59,4 @@ Based in Finland and open to remote B2B or contractor roles as a Unity Developer
 
 - Portfolio: https://tokarevdev.github.io/
 - LinkedIn: https://www.linkedin.com/in/oleksandr-tokarev/
-- Email: **otokarevdev@gmail.com**
+- Email: **otokarev@gmail.com**
